@@ -1,7 +1,5 @@
-// Imports
 const { User, Thought } = require("../models");
 
-// Get all users
 const userController = {
   async getUsers(req, res) {
     try {
@@ -17,7 +15,6 @@ const userController = {
     }
   },
 
-  // Get single user
   async getUser(req, res) {
     try {
       const user = await User.findOne({ _id: req.params.userId })
@@ -36,7 +33,6 @@ const userController = {
     }
   },
 
-  // Create user
   async createUser(req, res) {
     try {
       const user = await User.create(req.body);
@@ -47,7 +43,6 @@ const userController = {
     }
   },
 
-  // Update user
   async updateUser(req, res) {
     try {
       const user = await User.findOneAndUpdate(
@@ -67,7 +62,6 @@ const userController = {
     }
   },
 
-  // Delete user
   async deleteUser(req, res) {
     try {
       const user = await User.findOneAndDelete({ _id: req.params.userId });
@@ -86,7 +80,6 @@ const userController = {
     }
   },
 
-  // Add friend
   async addFriend(req, res) {
     try {
       const friend = await User.findOneAndUpdate(
@@ -106,7 +99,6 @@ const userController = {
     }
   },
 
-  // Delete friend
   async deleteFriend(req, res) {
     try {
       const friend = await User.findOneAndUpdate(
@@ -127,5 +119,4 @@ const userController = {
   },
 };
 
-// Exports
 module.exports = userController;
