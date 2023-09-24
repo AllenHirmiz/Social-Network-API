@@ -10,6 +10,11 @@ const users = [
     email: "ryan@gmail.com",
     thought: [],
   },
+  {
+    username: "AllenH",
+    email: "allenh@gmail.com",
+    thought: [],
+  },
 ];
 
 const thoughts = [
