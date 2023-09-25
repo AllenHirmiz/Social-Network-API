@@ -4,7 +4,7 @@ This project is just the backend API call to the social network application whic
 This project utilizes Express.js for routing, MongoDB for a NoSQL database, and Mongoose Object Document Mapper for Node.js.
 
 ## GitHub Repo URL
-https://github.com/AllenHirmiz/Tech-Blog-Website
+https://github.com/AllenHirmiz/Social-Network-API
 
 ## Website URL
 GitHub Repo URL Only
